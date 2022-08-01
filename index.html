@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>FormContact</title>
+    <script src="https://kit.fontawesome.com/3661569a87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="welcome">
+            <div class="info">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h1>Bem-Vindo!</h1>
+                <h2>Entre com a sua conta</h2>
+            </div>
+            <div class="formLogin">
+                <form action="login.html" method="POST">
+                    <p>Nome</p>
+                    <div class="inputIcons">
+                        <input type="email" name="email" placeholder="Digite seu e-mail">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p>Senha</p>
+                    <div class="inputIcons">
+                        <input type="password" name="password" placeholder="Digite sua senha">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="inputRemember">
+                        <div class="inputCheckbox">
+                            <input type="checkbox" class="checkbox">
+                            <p class="rememberMe">Lembrar de mim?</p>
+                        </div>
+                        <div class="inputForgotPass">
+                            <a href="">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                    <div class="inputSubmit">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="createAccount">
+            <div class="info">
+                <i class="fa-solid fa-circle-user"></i>
+                <h1>Criar uma conta!</h1>
+            </div>
+            <div class="formLogin">
+                <form action="login.html" method="POST">
+                    <p>Nome</p>
+                    <div class="inputIcons">
+                        <input type="text" name="name" placeholder="Digite seu nome">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p>E-mail</p>
+                    <div class="inputIcons">
+                        <input type="email" name="email" placeholder="Digite seu melhor e-mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="inputFlex">
+                        <div class="inputColunm">
+                            <p>Genero</p>
+                            <div class="inputIcons genero">
+                                <div class="type">
+                                    <input type="radio" name="genero" value="Masculino">
+                                    <span>Masculino</span>
+                                </div>
+                                <div class="type">
+                                    <input type="radio" name="genero" value="Masculino">
+                                    <span>Feminino</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputColunm">
+                            <p>Data de nascimento</p>
+                            <div class="inputIcons ">
+                                <input type="date" name="born" class="born">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputFlex ">
+                        <div class="inputColunm inputPhone">
+                            <p>Telefone</p>
+                            <div class="inputIcons">
+                                <input type="tel" name="phone" placeholder="(__) _____-____">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                        <div class="inputColunm inputCpf">
+                            <p>CPF</p>
+                            <div class="inputIcons">
+                                <input class="cpf" type="tex" name="cpf" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" min="11" max="14">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Onde nos conheceu?</p>
+                    <div class="inputIcons">
+                        <select name="local" id="local">
+                            <option value="blank" selected></option>
+                            <option value="instagram">Instagram</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="Google">Google</option>
+                        </select>
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="inputSubmit">
+                        <input type="submit" value="Criar conta">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

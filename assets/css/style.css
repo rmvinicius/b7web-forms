@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
+    margin: 20px;
+}
+
+/* GERAL */
+
+section .welcome, section .createAccount {
+    box-shadow: 0px 0px 20px rgb(167, 167, 167);
+    width: 50%;
+    border-radius:5px;
+}
+
+section .info {
+    text-align: center;
+    margin: 40px 0px;
+    letter-spacing: 2px;
+}
+
+section .info i {
+    margin-bottom: 24px;
+    font-size: 36px;
+}
+
+section .info h1 {
+    font-size: 40px;
+}
+
+section .info h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* LOGIN */
+
+.welcome {
+    margin-right: 5px;
+}
+
+.welcome i {
+    color: rgb(89, 89, 255);
+}
+
+.formLogin form {
+    width: 80%;
+}
+
+.formLogin .inputIcons {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+form p {
+    margin-bottom: 10px;
+}
+
+.formLogin .inputIcons i {
+    padding: 15px 15px;
+    background-color: rgba(226, 226, 226, 0.493);
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.formLogin input {
+    border: none;
+    background-color: rgba(226, 226, 226, 0.493);
+    padding: 15px;
+    width: 100%;
+    outline: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.formLogin .rememberMe {
+    padding: 0px;
+    margin: 0px;
+}
+
+.formLogin .inputRemember {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.inputRemember .inputCheckbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    width: 50%;
+    text-align: left;
+}
+
+.inputCheckbox .checkbox {
+    width: 20%;
+}
+
+.inputRemember .inputForgotPass {
+    width: 50%;
+    text-align: right;
+}
+
+.inputSubmit input {
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 5px;
+    background-color: rgb(89, 89, 255);
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 4px;
+}
+
+.inputSubmit i {
+    position: relative;
+    right: 50px;
+    color: white;
+}
+
+.inputSubmit input:hover {
+    cursor: pointer;
+}
+
+/* CRIAR CONTA */
+
+section .createAccount {
+    background: linear-gradient(120deg, rgb(150, 16, 150), rgb(235, 68, 235));
+    color: white;
+    margin-left: 5px;
+}
+
+.createAccount .genero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.genero .type {
+    display: flex;
+}
+
+.type span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.createAccount input {
+    background-color: white;
+}
+
+.createAccount .inputIcons i {
+    background-color: white;
+    color: rgb(89, 89, 255);
+}
+
+.inputIcons select {
+    border: none;
+    background-color: white;
+    padding: 14px;
+    width: 90%;
+    outline: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.inputIcons .born {
+    padding: 14px;
+}
+
+.createAccount .inputSubmit input {
+    background-color: white;
+    color: rgb(150, 16, 150);
+}
+
+.createAccount .inputSubmit i {
+    position: relative;
+    color: rgb(89, 89, 255);
+}
+
+.inputFlex {
+    display: flex;
+}
+
+.inputColunm {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.inputPhone .inputIcons {
+    width: 90%;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 770px) {
+    .container {
+        flex-direction: column;
+    }
+    section .welcome, section .createAccount {
+        width: 80%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .inputFlex {
+        flex-direction: column;
+    }
+    .inputPhone .inputIcons {
+        width: 100%;
+    }
+    section .info h1 {
+        font-size: 30px;
+    }
+    section .info {
+        margin: 20px 0px;
+    }
+    section .welcome, section .createAccount {
+        width: 100%;
+    }
+}
